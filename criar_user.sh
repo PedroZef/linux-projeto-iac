@@ -3,16 +3,16 @@
 
 echo "Criando usuários do sistema...."
 
-useradd guest10 -m -s /bin/bash -p $(openssl passwd -crypt Senha123)
-passwd guest10 -e
+useradd guesti10 -c "Usuário convidado10" -s /bin/bash -m -p $(openssl passwd Senha123)
+passwd guesti10 -e
 
-useradd guest11 -m -s /bin/bash -p $(openssl passwd -crypt Senha123)
-passwd guest11 -e
+useradd guesti11 -c "Usuário convidado11" -s /bin/bash -m -p $(openssl passwd Senha123)
+passwd guesti11 -e
 
-useradd guest12 -m -s /bin/bash -p $(openssl passwd -crypt Senha123)
-passwd guest12 -e
+useradd guesti12 -c "Usuário convidado12" -s /bin/bash -m -p $(openssl passwd Senha123)
+passwd guesti12 -e
 
-useradd guest13 -m -s /bin/bash  -p $(openssl passwd -crypt Senha123)
-passwd guest13 -e
+useradd guesti13 -c "Usuário convidado13" -s /bin/bash -m -p $(openssl passwd Senha123)
+passwd guesti13 -e
 
 echo "Finalizado!!"
